@@ -1,4 +1,4 @@
-package com.crm.qualifier.adapter.outbound.registry;
+package com.crm.qualifier.adapter.outbound.registry.dto;
 
 public record RegistryApiResponse(
         boolean found,

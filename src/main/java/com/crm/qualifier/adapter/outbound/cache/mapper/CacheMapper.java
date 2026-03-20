@@ -1,5 +1,6 @@
-package com.crm.qualifier.adapter.outbound.cache;
+package com.crm.qualifier.adapter.outbound.cache.mapper;
 
+import com.crm.qualifier.adapter.outbound.cache.dto.CacheEntryDto;
 import com.crm.qualifier.domain.model.ComplianceCheckResult;
 import com.crm.qualifier.domain.model.ComplianceCheckResult.ComplianceStatus;
 

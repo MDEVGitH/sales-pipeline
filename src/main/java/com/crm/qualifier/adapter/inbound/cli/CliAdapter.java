@@ -1,5 +1,9 @@
 package com.crm.qualifier.adapter.inbound.cli;
 
+import com.crm.qualifier.adapter.inbound.cli.dto.LeadRequest;
+import com.crm.qualifier.adapter.inbound.cli.dto.QualificationResponse;
+import com.crm.qualifier.adapter.inbound.cli.mapper.LeadRequestMapper;
+import com.crm.qualifier.adapter.inbound.cli.mapper.QualificationResponseMapper;
 import com.crm.qualifier.application.port.inbound.QualifyLeadUseCase;
 import com.crm.qualifier.domain.exception.InvalidLeadException;
 import com.crm.qualifier.domain.exception.QualificationException;

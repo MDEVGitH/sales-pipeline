@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.outbound.compliance;
 
+import com.crm.qualifier.adapter.outbound.compliance.dto.ComplianceApiResponse;
+import com.crm.qualifier.adapter.outbound.compliance.mapper.ComplianceMapper;
 import com.crm.qualifier.domain.model.ComplianceCheckResult;
 import com.crm.qualifier.domain.model.ComplianceCheckResult.ComplianceStatus;
 import org.junit.jupiter.api.Tag;

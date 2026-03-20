@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.inbound.cli;
 
+import com.crm.qualifier.adapter.inbound.cli.dto.LeadRequest;
+import com.crm.qualifier.adapter.inbound.cli.mapper.LeadRequestMapper;
 import com.crm.qualifier.domain.exception.InvalidLeadException;
 import com.crm.qualifier.domain.model.Lead;
 import org.junit.jupiter.api.Tag;

@@ -1,4 +1,4 @@
-package com.crm.qualifier.adapter.inbound.cli;
+package com.crm.qualifier.adapter.inbound.cli.dto;
 
 import java.util.List;
 

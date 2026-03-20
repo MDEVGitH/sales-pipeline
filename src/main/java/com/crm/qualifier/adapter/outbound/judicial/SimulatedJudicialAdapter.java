@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.outbound.judicial;
 
+import com.crm.qualifier.adapter.outbound.judicial.dto.JudicialApiResponse;
+import com.crm.qualifier.adapter.outbound.judicial.mapper.JudicialMapper;
 import com.crm.qualifier.application.port.outbound.JudicialPort;
 import com.crm.qualifier.domain.model.JudicialCheckResult;
 

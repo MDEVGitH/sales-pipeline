@@ -1,4 +1,4 @@
-package com.crm.qualifier.adapter.outbound.compliance;
+package com.crm.qualifier.adapter.outbound.compliance.dto;
 
 public record ComplianceApiResponse(
         String status,

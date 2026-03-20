@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.inbound.cli;
 
+import com.crm.qualifier.adapter.inbound.cli.dto.QualificationResponse;
+import com.crm.qualifier.adapter.inbound.cli.mapper.QualificationResponseMapper;
 import com.crm.qualifier.domain.model.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.outbound.registry;
 
+import com.crm.qualifier.adapter.outbound.registry.dto.RegistryApiResponse;
+import com.crm.qualifier.adapter.outbound.registry.mapper.RegistryMapper;
 import com.crm.qualifier.application.port.outbound.RegistryPort;
 import com.crm.qualifier.domain.model.Lead;
 import com.crm.qualifier.domain.model.RegistryCheckResult;

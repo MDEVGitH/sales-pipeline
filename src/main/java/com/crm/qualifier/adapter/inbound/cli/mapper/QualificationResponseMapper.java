@@ -1,5 +1,6 @@
-package com.crm.qualifier.adapter.inbound.cli;
+package com.crm.qualifier.adapter.inbound.cli.mapper;
 
+import com.crm.qualifier.adapter.inbound.cli.dto.QualificationResponse;
 import com.crm.qualifier.domain.model.Lead;
 import com.crm.qualifier.domain.model.PipelineResult;
 import com.crm.qualifier.domain.model.QualificationStatus;

@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.outbound.judicial;
 
+import com.crm.qualifier.adapter.outbound.judicial.dto.JudicialApiResponse;
+import com.crm.qualifier.adapter.outbound.judicial.mapper.JudicialMapper;
 import com.crm.qualifier.domain.model.JudicialCheckResult;
 import com.crm.qualifier.domain.model.JudicialCheckResult.JudicialStatus;
 import org.junit.jupiter.api.Tag;

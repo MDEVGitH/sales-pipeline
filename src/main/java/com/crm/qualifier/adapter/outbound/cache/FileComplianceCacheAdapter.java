@@ -1,5 +1,7 @@
 package com.crm.qualifier.adapter.outbound.cache;
 
+import com.crm.qualifier.adapter.outbound.cache.dto.CacheEntryDto;
+import com.crm.qualifier.adapter.outbound.cache.mapper.CacheMapper;
 import com.crm.qualifier.application.port.outbound.ComplianceCachePort;
 import com.crm.qualifier.domain.model.ComplianceCheckResult;
 import com.google.gson.Gson;

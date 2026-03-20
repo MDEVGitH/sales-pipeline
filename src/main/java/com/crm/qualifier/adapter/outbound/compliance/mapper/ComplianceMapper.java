@@ -1,5 +1,6 @@
-package com.crm.qualifier.adapter.outbound.compliance;
+package com.crm.qualifier.adapter.outbound.compliance.mapper;
 
+import com.crm.qualifier.adapter.outbound.compliance.dto.ComplianceApiResponse;
 import com.crm.qualifier.domain.model.ComplianceCheckResult;
 import com.crm.qualifier.domain.model.ComplianceCheckResult.ComplianceStatus;
 
