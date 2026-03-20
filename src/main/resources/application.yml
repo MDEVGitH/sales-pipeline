@@ -1,0 +1,23 @@
+cache:
+  file-path: ./data/compliance-cache.json
+  ttl-hours: 24
+
+adapter:
+  registry:
+    seed:
+  judicial:
+    seed:
+  compliance:
+    seed:
+  score:
+    seed:
+
+pipeline:
+  parallel-timeout-seconds: 10
+  per-service-timeout-seconds: 5
+  score-threshold: 60
+
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
