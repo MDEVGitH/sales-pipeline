@@ -1,0 +1,23 @@
+cache:
+  file-path: ${java.io.tmpdir}/test-compliance-cache.json
+  ttl-hours: 1
+
+adapter:
+  registry:
+    seed: 12345
+  judicial:
+    seed: 67890
+  compliance:
+    seed: 11111
+  score:
+    seed: 99999
+
+pipeline:
+  parallel-timeout-seconds: 5
+  per-service-timeout-seconds: 3
+  score-threshold: 60
+
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off

@@ -20,9 +20,18 @@ public class CliAdapter {
         this.qualifyLeadUseCase = qualifyLeadUseCase;
     }
 
-    public void run(String[] args) {
+    /**
+     * Runs the CLI pipeline. Returns an exit code:
+     * 0 = success, 1 = input/validation error, 3 = pipeline error.
+     */
+    public int run(String[] args) {
         try {
             Map<String, String> params = parseArgs(args);
+
+            if (params.isEmpty()) {
+                System.out.println("Usage: --nationalId=... --birthdate=YYYY-MM-DD --firstName=... --lastName=... --email=...");
+                return 0;
+            }
 
             LeadRequest request = new LeadRequest(
                     params.get("nationalId"),
@@ -37,19 +46,20 @@ public class CliAdapter {
             QualificationResponse response = responseMapper.toResponse(result, lead);
 
             printResult(response);
+            return 0;
 
         } catch (DateTimeParseException e) {
             System.err.println("ERROR: Invalid date format. Expected YYYY-MM-DD, got: " + e.getParsedString());
-            System.exit(1);
+            return 1;
         } catch (InvalidLeadException e) {
             System.err.println("ERROR: Invalid lead data — " + e.getMessage());
-            System.exit(1);
+            return 1;
         } catch (QualificationException e) {
             System.err.println("ERROR: Qualification pipeline failed — " + e.getMessage());
-            System.exit(3);
+            return 3;
         } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
-            System.exit(1);
+            return 1;
         }
     }
 

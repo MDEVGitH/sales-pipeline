@@ -20,6 +20,9 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        cliAdapter.run(args);
+        int exitCode = cliAdapter.run(args);
+        if (exitCode != 0) {
+            System.exit(exitCode);
+        }
     }
 }
